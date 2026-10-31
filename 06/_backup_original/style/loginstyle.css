@@ -1,0 +1,122 @@
+/* ===== Reset & Base ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ===== Login Container ===== */
+#header {
+    width: 100%;
+    max-width: 420px;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+    padding: 40px 36px;
+    text-align: center;
+    margin: 20px;
+}
+
+#header h1 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 8px;
+    letter-spacing: 0.5px;
+}
+
+#header > p {
+    font-size: 14px;
+    color: #64748b;
+    margin-bottom: 32px;
+}
+
+/* ===== Login Form ===== */
+.login-form {
+    text-align: left;
+}
+
+.login-form h2 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #1e293b;
+    margin-bottom: 24px;
+    padding-bottom: 12px;
+    border-bottom: 3px solid #38bdf8;
+    display: inline-block;
+}
+
+.login-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 14px 16px;
+    font-size: 15px;
+    font-family: inherit;
+    color: #1e293b;
+    background: #f8fafc;
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.login-form input::placeholder {
+    color: #94a3b8;
+}
+
+.login-form input:focus {
+    border-color: #38bdf8;
+    box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.15);
+    background: #ffffff;
+}
+
+.login-form button {
+    width: 100%;
+    padding: 14px;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: inherit;
+    color: #ffffff;
+    background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    margin-top: 8px;
+}
+
+.login-form button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(14, 165, 233, 0.35);
+}
+
+.login-form button:active {
+    transform: translateY(0);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 480px) {
+    #header {
+        padding: 30px 24px;
+        margin: 16px;
+    }
+
+    #header h1 {
+        font-size: 26px;
+    }
+}
